@@ -139,6 +139,9 @@ toast("Hi!");</code></pre>
         <button class="btn" onclick="toast.message({ title: 'Confirmation needed', description: h('div', {class: 'flex justify-between items-center'}, [h('span', {}, 'Please confirm your action'), h('button', { dataset: { toastDismiss: true }, class: 'btn'}, ['Confirm'])]) })">
           With HTML
         </button>
+        <button class="btn" onclick="toast('This toast will stay until dismissed', { persist: true })">
+          Persist
+        </button>
       </div>
     </section>
     <section>
